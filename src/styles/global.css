@@ -1,0 +1,70 @@
+/* src/styles/app.css */
+@import 'tailwindcss' source('../');
+
+body {
+  @apply font-sans bg-gray-100 text-gray-900 flex flex-col min-h-dvh justify-center items-center;
+}
+
+main {
+  @apply w-full max-w-6xl mx-auto px-4 flex-1;
+}
+
+h1 {
+  @apply text-4xl font-extrabold mb-6 lg:pl-10;
+}
+
+h2 {
+  @apply text-3xl font-semibold mb-5;
+}
+
+h3 {
+  @apply text-2xl mb-4;
+}
+
+p {
+  @apply text-gray-700 mb-2;
+}
+
+.button {
+  @apply bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600;
+}
+
+.card {
+  @apply flex flex-col gap-8 bg-gray-300 rounded-2xl shadow-2xl mx-auto;
+}
+
+.item-card {
+  @apply border border-gray-300 rounded-lg p-4 shadow-sm bg-violet-200 h-full hover:scale-105 transition-transform;
+}
+
+.list {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.header {
+  @apply bg-cyan-950 text-gray-50 p-4 min-w-full mb-8 flex justify-start;
+}
+
+.footer {
+  @apply bg-cyan-900 text-white p-4 mt-8 text-center min-w-full;
+}
+
+.container {
+  @apply w-full max-w-6xl mx-auto px-4 flex-1;
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply flex flex-col gap-6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply grid grid-cols-2 gap-6;
+  }
+}
+
+img {
+  @apply rounded-lg object-cover;
+}
